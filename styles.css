@@ -72,7 +72,7 @@ header a{
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
     gap: 5px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .carousel .list .item .buttons button{
     border: none;
