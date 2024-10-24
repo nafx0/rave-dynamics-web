@@ -33,13 +33,16 @@ header a{
 }
 /* carousel */
 .carousel{
-    height: 100vh!important;
+    height: 100vh;
     margin-top: -50px;
     width: 100vw;
     overflow: hidden;
     position: relative;
-    margin-bottom: 0!important;
+    margin-bottom: 0px!important;
+    padding-bottom: 10px!important;
+    overflow-y: hidden!important;
 }
+
 .carousel .list .item{
     width: 100%;
     height: 100%;
