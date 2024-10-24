@@ -321,3 +321,41 @@ header a{
         font-size: 30px;
     }
 }
+
+.typewriter-blog {
+    font-size: 1.5rem;                     /* Font size */
+    margin-inline: auto;                   /* Center the element */
+    overflow: hidden;                      /* Hide overflow */
+    white-space: nowrap;                   /* Prevent text from wrapping */
+    display: inline-block;                 /* Allow width adjustments */
+    position: relative;                    /* Positioning for the pseudo-element */
+    animation: typing 10s steps(24, end) forwards; /* Typing animation */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0%;                         /* Start with no width */
+    }
+    to {
+        width: 100%;                       /* End with full width */
+    }
+}
+
+/* Cursor effect using pseudo-element */
+.typewriter-blog::after {
+    content: '';                           /* Empty content for the cursor */
+    position: absolute;                    /* Position it absolutely */
+    right: 0;                              /* Align it to the right */
+    width: 2px;                            /* Cursor width */
+    height: 1.2em;                         /* Cursor height */
+    background-color: #000;                /* Cursor color */
+    animation: blink 0.75s step-end infinite; /* Blinking animation */
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    50% {
+        background-color: transparent;     /* Hide cursor in the middle of the blink */
+    }
+}
