@@ -329,7 +329,7 @@ header a{
     white-space: nowrap;                   /* Prevent text from wrapping */
     display: inline-block;                 /* Allow width adjustments */
     position: relative;                    /* Positioning for the pseudo-element */
-    animation: typing 10s steps(24, end) forwards; /* Typing animation */
+    animation: typing 4s steps(24, end) forwards; /* Typing animation */
 }
 
 /* Typing animation */
